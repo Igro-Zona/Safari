@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <link
       rel="stylesheet"
@@ -17,6 +17,39 @@
     <link
       rel="stylesheet"
       href="./css/style.css"
+    />
+    <link
+      rel="preload"
+      href="./css/style.css"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="./fonts/PTSerif-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Roboto-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Roboto-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Roboto-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <link
       rel="icon"
@@ -994,16 +1027,18 @@
           <header class="map__header">
             <h2 class="map__title">Карта Африки</h2>
           </header>
-          <iframe
-            class="map__image"
-            width="1120"
-            height="612"
-            loading="lazy"
-            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d16022466.138285208!2d26.3564769!3d-11.3540639!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sec!4v1752862923819!5m2!1sru!2sec"
-            style="border: 0"
-            allowfullscreen=""
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="map__container">
+            <iframe
+              class="map__image"
+              width="1120"
+              height="612"
+              loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d16022466.138285208!2d26.3564769!3d-11.3540639!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sec!4v1752862923819!5m2!1sru!2sec"
+              style="border: 0"
+              allowfullscreen=""
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
       <!-- ABOUT SECTION -->
